@@ -14,6 +14,7 @@ small, strong, sub, sup, var,
 b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
@@ -81,7 +82,10 @@ abbr[title], dfn[title] {
     cursor:help;
 }
 
-
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
 
 /* change border colour to suit your needs */
 hr {
@@ -115,8 +119,6 @@ header nav {
     background-color: black;
     color: orange;
 }
-
-
 
 a {
     text-decoration: none;
@@ -218,17 +220,10 @@ header .nav-login a {
     position: relative;
 }
 
-.signup-box input[type=text]{
+.signup-box input[type=text] {
     margin-left: 70px;
     margin-top: 30px;
 }
-
-.signup-box input[type=password]{
-    margin-left:70px;
-    margin-top: 30px;
-}
-
-
 
 .signup-box button {
     margin-left: 120px;
@@ -238,25 +233,11 @@ header .nav-login a {
 /* Afspraak pagina */
 
 .afspraak-box {
-    width: 550px;
-    
-    border: 2px solid #000000;
+    width: 600px;
+    height: 580px;
+    border: 3px solid #000000;
     margin: auto auto;
     position: relative;
-}
-
-.tekst-box {
-    width: 750px;
-    height: 550px;
-    margin: auto auto;
-    float: left;
-    font-size: 20px;
-    padding-top: 50px;
-    padding-left: 30px;
-}
-
-.zin {
-    font-size: 20px;
 }
 
 .afspraak-box input[type=text] {
@@ -264,8 +245,9 @@ header .nav-login a {
     display: block;
 }
 
-#datepicker {
-    position: relative;
+.afspraak-box input[type=date] {
+    margin: 0 auto;
+    display: block;
 }
 
 .afspraak-box input[type=time] {
@@ -294,8 +276,5 @@ header .nav-login a {
     font-family: Arial;
     margin-top: 5px;
 }
-
-
-
 
 

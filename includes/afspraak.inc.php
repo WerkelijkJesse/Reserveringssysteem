@@ -13,11 +13,6 @@ if (isset($_POST['submit'])) {
     if (empty($name) || empty($reden) || empty($evenement) || empty($datum) || empty($time) || empty($adres)) {
         header("Location: ../afspraak.php?afspraak=leeg");
         exit();
-    }
-        else if (($securimage->check($_POST['captcha_code']) == false) {
-            )
-            echo "The security code entered was incorrect.<br /><br />";
-            exit();
     } else {
         $sql = "INSERT INTO afspraken (name, reden, evenement, datum, time, adres)
                 VALUES ('$name', '$reden', '$evenement', '$datum', '$time', '$adres');";

@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $uid = mysqli_real_escape_string($conn, $_POST['uid']);
     $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
-    //Check of alles is ingevuld
+
     if (empty($first) || empty($last) || empty($email) || empty($uid) || empty($pwd) ) {
         header("Location: ../signup.php?signup=empty");
         exit();

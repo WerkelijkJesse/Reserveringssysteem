@@ -41,6 +41,7 @@ mysqli_close($conn);
             <td><?= $afspraak['evenement']; ?></td>
             <td><?= $afspraak['time']; ?></td>
             <td><?= $afspraak['adres']; ?></td>
+            <td><a href="delete.php?id=<?= $afspraak['u_id'];?>"><button type="submit" name="delete">Delete</button></a></td>
         </tr>
     <?php } ?>
 

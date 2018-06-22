@@ -23,9 +23,9 @@
     <input type="time" name="time" id="time" required><br>
     <p>Adres:</p>
     <input type="text" name="adres" required><br>
-    <img id="captcha" src="/securimage/securimage_show.php" alt="CAPTCHA Image" />
+    <img style="margin: 0 auto;display:block;" id="captcha" src="./includes/securimage/securimage_show.php" alt="CAPTCHA Image" />
     <input type="text" name="captcha_code" size="10" maxlength="6" />
-    <a href="#" onclick="document.getElementById('captcha').src = '/securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
+    <a href="#" style="padding-left: 39%" onclick="document.getElementById('captcha').src = './includes/securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
     <input type="submit" name="submit" value="Submit">
 </form>
 </div>
